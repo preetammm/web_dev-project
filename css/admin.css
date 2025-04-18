@@ -1,0 +1,202 @@
+/* Admin-specific styles */
+
+/* Admin navbar */
+.navbar {
+    background: rgba(31, 38, 135, 0.2) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Admin cards */
+.admin-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px 0 rgba(31, 38, 135, 0.25);
+}
+
+/* Admin dashboard stats */
+.dashboard-stats {
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+.dashboard-stats .stats-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.dashboard-stats .stats-label {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Admin tables */
+.table {
+    color: #333;
+}
+
+.table thead th {
+    border-bottom: 2px solid rgba(31, 38, 135, 0.2);
+    font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(31, 38, 135, 0.05);
+}
+
+/* Admin buttons */
+.btn-admin-primary {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-admin-primary:hover {
+    background: linear-gradient(135deg, #3f44a9, #7a7fe6);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(31, 38, 135, 0.2);
+    color: white;
+}
+
+.btn-admin-danger {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-admin-danger:hover {
+    background: linear-gradient(135deg, #e63860, #e64326);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.2);
+    color: white;
+}
+
+/* Admin forms */
+.admin-form .form-control {
+    border-radius: 10px;
+    border: 1px solid rgba(31, 38, 135, 0.2);
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.admin-form .form-control:focus {
+    border-color: #4e54c8;
+    box-shadow: 0 0 0 0.25rem rgba(78, 84, 200, 0.25);
+}
+
+.admin-form .form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Admin badges */
+.badge {
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+/* Admin icons */
+.admin-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+/* Admin page headers */
+.admin-page-header {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-page-header h1 {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0;
+}
+
+/* Admin filters */
+.admin-filters {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+/* Admin quick actions */
+.quick-action-card {
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    transition: all 0.3s ease;
+}
+
+.quick-action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px 0 rgba(31, 38, 135, 0.15);
+}
+
+.quick-action-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+/* Admin glass effect */
+.admin-glass {
+    background: rgba(31, 38, 135, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+/* Admin responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-stats .stats-number {
+        font-size: 2rem;
+    }
+    
+    .admin-page-header {
+        text-align: center;
+    }
+    
+    .admin-page-header .btn {
+        margin-top: 15px;
+    }
+}
